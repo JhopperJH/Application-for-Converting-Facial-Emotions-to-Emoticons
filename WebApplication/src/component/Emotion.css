@@ -1,0 +1,67 @@
+
+.popup {
+    position: fixed; /* Fix the popup to the viewport */
+    top: 0; /* Align the top edge of the popup with the top of the viewport */
+    left: 0; /* Align the left edge of the popup with the left of the viewport */
+    width: 100%; /* Make the popup take up the full width of the viewport */
+    height: 100%; /* Make the popup take up the full height of the viewport */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for a dimming effect */
+    display: flex; /* Allow horizontal alignment of content within the popup */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    z-index: 999; /* Set a high z-index to ensure the popup overlays other components */
+    padding: 20px; /* Add some padding for better content readability */
+    box-sizing: border-box; /* Include padding within the width/height calculation */
+  }
+  
+.popup.hidden {
+display: none; /* Hide the popup initially or when onClose is triggered */
+}
+.close{
+    display: flex; /* Make the container a flexbox */
+    justify-content: flex-end;
+}
+.result-component{
+    padding-bottom: 10px;
+    display: flex; /* Make the container a flexbox */
+    justify-content: center;
+}
+
+.contain-result{
+    width: 450px;
+    height: 500px;
+    padding: 10px 20px 20px;
+    justify-content: center; /* Horizontally center items within the container */
+    align-items: center; /* Vertically center items within the container (optional) */
+    background-color: rgb(255, 252, 168);
+}
+
+.result-emoji{
+    text-shadow: 0px 7px 13px rgba(0, 0, 0, 0.5);
+    display: flex; /* Make the container a flexbox */
+    justify-content: center;
+    align-content: center;
+    font-size: 140px;
+}
+
+.copy-button{
+    justify-content: center;
+    border: 5px solid #e97c7c;
+    background-color: #dbbff5; /* Replace with your desired color */
+    color: black; /* Text color */
+    padding: 15px 40px 10px; /* Adjust padding as needed */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+}
+
+.copy-button:hover{
+    border: 2px solid #e97c7c;
+
+    background-color: #dbbff5; /* Replace with your desired color */
+    color: rgb(255, 254, 255); /* Text color */
+    padding: 15px 40px 10px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+}

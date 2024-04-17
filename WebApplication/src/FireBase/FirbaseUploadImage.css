@@ -1,0 +1,287 @@
+.upload-btn { /* Renamed for clarity and combined functionality */
+    padding: 30px 10px 5px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Horizontally center content */
+    margin: 0 auto; /* Maintain horizontal centering */
+    width: fit-content; /* Allow content to define width */
+}
+
+.center-ja{
+    padding-top: 10px;
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Horizontally center content */
+    margin: 0 auto;
+}
+.upload-btn input[type="file"] {
+    /* Reset browser defaults (adjust as needed) */
+    display: inline-block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: -10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f3f690;
+    border-radius: 5px;
+    cursor: pointer;
+    order: 1; /* Ensure the input comes first in the flexbox order */
+  }
+input{
+    display: none;
+}
+  input[type="file"] {
+    display: none;
+  }
+  
+.choosefile{
+    display: inline-flex;
+    justify-content: center;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.containbox {
+    justify-content: center;
+    margin:0 auto; /* Center the element horizontally */
+    width: fit-content; /* Allow the content to define the width */
+}
+.detect-btn{
+    justify-content: center;
+    background-color: #ffef12; /* Replace with your desired color */
+    color: rgb(0, 0, 0); /* Text color */
+    padding: 15px 40px 10px; /* Adjust padding as needed */
+    border: 5px solid #ffffff; /* Remove default border */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+    margin-right: 2rem;
+}
+.detect-btn:hover{
+    justify-content: center;
+    background-color: #fff9b2; /* Replace with your desired color */
+    color: #000000; /* Text color */
+    padding: 15px 40px 10px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+    margin-right: 2rem;
+}
+
+.choose-btn{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: linear-gradient(to top, rgba(155, 249, 243, 0.548), #f7f9f7); /* Change colors as desired */
+
+    /*background-color: #fff9b2; /* Replace with your desired color */
+    color: rgb(0, 0, 0); /* Text color */
+    padding: 10px 5px 5px 5px; /* Adjust padding as needed */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 25px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+    margin-right: 2rem;
+}
+.choose-btn:hover{
+    justify-content: center;
+    background-color: #cfc98f; /* Replace with your desired color */
+    color: #000000; /* Text color */
+    padding: 12px 7px 7px 7px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+    margin-right: 2rem;
+}
+.cam-btn{
+    justify-content: center;
+    background-color: #ccff00; /* Replace with your desired color */
+    color: rgb(255, 2, 196); /* Text color */
+    padding: 15px 40px 10px; /* Adjust padding as needed */
+    border: 5px solid #ffffff; /* Remove default border */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+}
+.cam-btn:hover{
+    background-color: #e5ffd5; /* Replace with your desired color */
+    color: rgb(255, 2, 196); /* Text color */
+    padding: 15px 40px 10px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+}
+.lottie-container { /* Optional: Create a dedicated container for the animation */
+    width: 420px; /* Adjust width as needed */
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.9);
+
+    height: 420px; /* Adjust height as needed */
+    overflow: hidden; /* Prevent the animation from overflowing its container if oversized */
+    border: 7px solid #fdffb7; /* Optional: Add a border for styling (adjust color as needed) */
+    border-radius: 10px; /* Optional: Add rounded corners for styling */
+    margin-top: -5px;
+    margin-bottom: 1rem; /* Add spacing below the container */
+    display: flex;
+    position: relative;
+}
+  
+.lottie-container img { /* Style the Lottie animation image within the container (if necessary) */
+    position: absolute; /* Position the image absolutely within the container */
+  top: 0; /* Align image to the top of the container */
+  left: 0; /* Align image to the left of the container */
+  width: 100%; /* Make the image take up the full width of the container */
+  height: 100%; /* Make the image take up the full height of the container */
+  object-fit: cover; /* Resize the image to cover the container while maintaining aspect ratio */
+}
+
+
+.button {
+    position: relative;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    transition: all 0.2s ease;
+  }
+  .button:active {
+    transform: scale(0.96);
+  }
+.button:before,
+.button:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+.button.animate::before {
+  top: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  animation: greentopBubbles ease-in-out 0.6s forwards infinite;
+}
+
+.button:before,
+.button:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+.button.animate::before {
+  top: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  animation: greentopBubbles ease-in-out 0.6s forwards infinite;
+}
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+.button.animate::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  animation: greenbottomBubbles ease-in-out 0.6s forwards infinite;
+}
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+@keyframes greentopBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+        40% 90%, 55% 90%, 70% 90%;
+    }
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+        50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+        50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  .button.animate::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    animation: greenbottomBubbles ease-in-out 0.6s forwards infinite;
+  }
+  @keyframes greenbottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }

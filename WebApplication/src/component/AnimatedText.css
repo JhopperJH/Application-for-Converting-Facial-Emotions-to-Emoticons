@@ -1,0 +1,11 @@
+.animated-text {
+    font-size: 1.9em;
+    text-transform: uppercase;
+    letter-spacing: 0em;
+    font-weight: 600;
+  }
+  
+  .animated-text .letter {
+    display: inline-block;
+    line-height: 1em;
+  }

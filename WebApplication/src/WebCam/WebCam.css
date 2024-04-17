@@ -1,0 +1,133 @@
+.react-webcam {
+    width: 400px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.popup {
+    position: fixed; /* Fix the popup to the viewport */
+    top: 0; /* Align the top edge of the popup with the top of the viewport */
+    left: 0; /* Align the left edge of the popup with the left of the viewport */
+    width: 100%; /* Make the popup take up the full width of the viewport */
+    height: 100%; /* Make the popup take up the full height of the viewport */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for a dimming effect */
+    display: flex; /* Allow horizontal alignment of content within the popup */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    z-index: 999; /* Set a high z-index to ensure the popup overlays other components */
+    padding: 20px; /* Add some padding for better content readability */
+    box-sizing: border-box; /* Include padding within the width/height calculation */
+  }
+  
+.popup.hidden {
+display: none; /* Hide the popup initially or when onClose is triggered */
+}
+
+.close{
+    display: flex; /* Make the container a flexbox */
+    justify-content: flex-end;
+}
+
+.contain-cam{
+    width: 550px;
+    height: 500px;
+    padding: 10px 20px 20px;
+    border-radius: 10px;
+    justify-content: center; /* Horizontally center items within the container */
+    align-items: center; /* Vertically center items within the container (optional) */
+   /* background-color:rgb(226, 144, 207);*/
+    background-image: linear-gradient(to top, rgb(226, 144, 207) 85%, #f7c7f7); /* Change colors as desired */
+
+    position: relative; /* Required for absolute positioning of close button */
+
+}
+
+.cam-div{
+    display: flex; /* Make the container a flexbox */
+    justify-content: center; /* Align items horizontally at the center */
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    border: 7px solid #ccc;
+    border-radius: 15px;
+    background-color: rgb(113, 136, 140);
+}
+
+
+.cam-div img{
+    display: flex; /* Make the container a flexbox */
+    justify-content: center; /* Align items horizontally at the center */
+    align-items: center;
+    width: 90%;
+    border: 5px solid #fcff35;
+    border-radius: 15px;
+    background-color: rgb(113, 136, 140);
+}
+
+.btn-container { /* Renamed for clarity and combined functionality */
+    padding: 30px 10px 5px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Horizontally center content */
+    margin: 0 auto; /* Maintain horizontal centering */
+    width: fit-content; /* Allow content to define width */
+}
+.snap-btn{
+    justify-content: center;
+    background-color: #95ff00; /* Replace with your desired color */
+    color: black; /* Text color */
+    padding: 15px 40px 10px; /* Adjust padding as needed */
+    box-shadow: 0px 5px 10px rgba(103, 4, 145, 0.742);
+    border-radius: 25px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+}
+.snap-btn:hover{
+    background-color: #657eb3; /* Replace with your desired color */
+    color: rgb(255, 254, 255); /* Text color */
+    padding: 15px 40px 10px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+}
+
+.cap-btn{
+    justify-content: center;
+    background-color: #0dd7ff; /* Replace with your desired color */
+    color: black; /* Text color */
+    padding: 15px 40px 10px; /* Adjust padding as needed */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border: 5px solid #ffffff; 
+    border-radius: 25px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+}
+.cap-btn:hover{
+    border: 2px solid #ffffff; 
+    background-color: #81cedd; /* Replace with your desired color */
+    color: rgb(255, 254, 255); /* Text color */
+    padding: 15px 40px 10px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+}
+
+.re-btn{
+    margin-right: 50px;
+    justify-content: center;
+    background-color: #ad2e11; /* Replace with your desired color */
+    color: rgb(255, 254, 255); /* Text color */
+    padding: 15px 40px 10px; /* Adjust padding as needed */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+}
+.re-btn:hover{
+    margin-right: 50px;
+
+    background-color: #cc715d; /* Replace with your desired color */
+    color: rgb(255, 254, 255); /* Text color */
+    padding: 15px 40px 10px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+}
