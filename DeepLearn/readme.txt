@@ -4,6 +4,7 @@ Dataset: https://www.kaggle.com/datasets/msambare/fer2013
 The FER.ipynb is our first try using Tensorflow
 The FER_main.py is our second try using Pytorch to create EmotionNet
 The FER_main2.py is our third try using Pytorch to create Transfer learning model
+haarcascade_frontalface_default.xml is used for detect human face on images
 
 reference:
 https://youtu.be/avv9GQ3b6Qg?si=UOR09sGUtCjgJD49
